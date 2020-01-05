@@ -34,7 +34,55 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
-      <p><img src="https://www.dropbox.com/s/mguikq5n43bubva/2020-01-03_18h35_46.jpg?dl=1" alt="" width="564" height="454" /></p>
+      <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="https://www.dropbox.com/s/uhwi7uf8ygy5cx3/2020-01-03_18h35_20.jpg?dl=1" alt="Cinque Terre" width="600" height="400">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="https://www.dropbox.com/s/mguikq5n43bubva/2020-01-03_18h35_46.jpg?dl=1" alt="Forest" width="600" height="400">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="https://www.dropbox.com/s/tl3rhpfvd9jb257/2020-01-03_18h35_37.jpg?dl=1" alt="Forest" width="600" height="400">
+  </a>
+  
+</div>
+
+
+
+
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
